@@ -1,30 +1,32 @@
 ## Synopsis
 
-This is a basic UX for a top level search of a museum's object collection. Currently, only a top level result count is shown, with the number of results attributed to pre-specified 'facets' accordingly. This facet list will be built on to provide a full results lists. 
+This is an interactive timeline populated with objects from a museum's collection.
 
 ## Motivation
 
-This project demonstrates a simple interface built with React using a Flux architecture. The collections API just happens to have some interesting data.
+This project explored the way in which objects from a museum's collection can be placed on an easy-to-use interative timeline. 
 
 ## Installation
 
+Amend the apiURL path in src/main.js according to the location of the project's 'api' directory:
+
 ```
-npm install
+MOLTime.props = {
+...
+	//amend as required
+	apiURL : "http://localhost/timeline/api/objects/search/",
+...
+}
 
 ```
 
-To start the back-end proxy that handles requests for API data (uses nodemon) - see src/server.js
+Then rebuild the project by running:
 
 ```
-npm start
+npm run build
 
 ``` 
-To start the webpack dev server to see the front-end at http://localhost:8080, open another console
 
-```
-npm run start:dev
-
-```
 
 
 
