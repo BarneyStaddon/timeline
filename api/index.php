@@ -81,10 +81,12 @@ $app->run();
 
 function getObjectData($object_id) {
 
+
     $apiURL = "http://fe01.museumoflondon.org.uk/solr/mol/select?q=idNumber:";
 
     //put any slashes back
     $object_id = str_replace("-","/",$object_id);
+
 
     // create curl resource 
     $ch = curl_init(); 
@@ -104,6 +106,5 @@ function getObjectData($object_id) {
     curl_close($ch);
 
     echo $output;
-
 
 };

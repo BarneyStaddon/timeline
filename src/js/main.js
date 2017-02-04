@@ -16,8 +16,8 @@ MOLTime.props = {
 	footerHeight : 48,
 	objectMarkerWidth : 80,
 
-	//apiURL : "http://coltest.museumoflondon.org.uk/timeline/api/objects/search/",
-	apiURL : "http://localhost/skeleton/api/objects/search/",
+	//amend as required
+	apiURL : "http://localhost/timeline/api/objects/search/",
 	imageURL : "http://fe02.museumoflondon.org.uk/imagestore",
 
 	itemIds : [
